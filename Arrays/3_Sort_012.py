@@ -40,3 +40,7 @@ def sortColor(nums):
     
     
 sortColor([2,0,2,1,1,0])
+
+arr = [1,2,3,2,13,2]
+arr.sort()
+print(arr[-1])
