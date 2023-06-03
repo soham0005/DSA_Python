@@ -10,7 +10,6 @@ Reverse the Block and join
 
 def RotateArray(nums,k):
     # nums = nums[::-1]
-    # nums[:k] = nums[:k][::-1]
     # nums[k:] = nums[k:][::-1]
     # print(nums)
     # return nums
