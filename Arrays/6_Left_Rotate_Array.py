@@ -10,9 +10,19 @@ Approach:- Store the first element is temp
 
 def leftRotate(nums):
     temp = nums[0]
+    print(nums[len(nums)-1])
     for i in range(1,len(nums)):
         [nums[i],nums[i-1]] = [nums[i-1],nums[i]]
     nums[len(nums) - 1] = temp
     return nums
+
+def rightRotate(nums):
+    n = len(nums)
+    temp = nums[n - 1]
     
-print(leftRotate([1,2,3,4,5]))
+    for i in range(n-1,0,-1):
+        nums[i] = nums[i-1]
+    nums[0] = temp
+    return nums 
+    
+print(rightRotate([1,2,3,4,5]))
