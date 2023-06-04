@@ -5,8 +5,8 @@ one pointer pointing to first ele and second pointer to 1st index;
 Loop and check if j's value is equal to i's value; if not equal then place j'value to i+1
 else skip
 
-
 '''
+
 
 def removeDuplicates(nums):
     i = 0
