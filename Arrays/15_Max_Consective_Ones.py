@@ -11,5 +11,5 @@ def  maxConsectiveOnes(nums):
 
         else:
             count = 0
-    return maxCount
+    return maxCount 
 maxConsectiveOnes([1,0,1,1,0,1])
