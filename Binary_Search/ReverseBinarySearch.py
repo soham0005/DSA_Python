@@ -1,7 +1,6 @@
 # Binary Search for Array sorted in decreasing order
 
-
-def binarySearch(nums,target):
+def ReversebinarySearch(nums,target):
     start = 0
     end = len(nums) - 1
     
@@ -17,4 +16,4 @@ def binarySearch(nums,target):
             return mid
     return False
 
-print(binarySearch([59,31,20,19,15,10,7,3,1],19))
+print(ReversebinarySearch([59,31,20,19,15,10,7,3,1],19))
