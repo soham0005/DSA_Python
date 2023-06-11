@@ -17,11 +17,10 @@ def peakElementInMountainArray(arr):
 
     while start < end:
         mid = (start + (end - start) // 2)
-
-        if arr[mid] > arr[mid+1]:
+        if arr[mid] > arr[mid + 1]:
             end = mid
         else:
             start = mid + 1
     return start
 
-print(peakElementInMountainArray([1,2,3,4,2,1]))
+print(peakElementInMountainArray([1,2,3,4,6,19,4,3,2,1]))
