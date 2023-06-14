@@ -14,5 +14,3 @@ def Selection_Sort(nums):
         [nums[minIndex],nums[counter]] = [nums[counter],nums[minIndex]]
         
     return nums 
-print(Selection_Sort([1,3,2,5,7,12,9,211,20]))
-    
