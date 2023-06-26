@@ -40,7 +40,7 @@ class LinkedList:
                 temp = temp.next
             
             temp.next = node
-            print("Done")
+            # print("Done")
         
     def addAtPosition(self,pos,data):
         node = Node(data)
@@ -56,7 +56,23 @@ class LinkedList:
             temp.next = node 
             print("Ok")
             
-        
+    def deleteNode(self,key):
+        if self.head is None:
+            return "Empty LinkedList"
+        else:
+            if self.head == key:
+                self.head = self.head.next
+            else:
+                temp = self.head
+                while temp is not None:
+                    if temp.data == key:
+                        break
+                    prev = temp
+                    temp = temp.next
+                if temp is None:
+                    return
+                prev.next = temp.next
+                temp = None
             
             
     
@@ -74,7 +90,9 @@ linkedlist.addAtStart(10)
 linkedlist.addAtStart(20)
 linkedlist.addAtLast("Not Last Element")
 linkedlist.addAtPosition(1,"Second Element")
+linkedlist.deleteNode("s")
 linkedlist.displayNodes()
+
 
  
 # linkedlist.displayNodes()
