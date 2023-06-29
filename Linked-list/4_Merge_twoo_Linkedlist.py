@@ -1,6 +1,8 @@
 # Leetcode - 21
 '''
 Approach: Use Extra LinkedList and using loop compare the values and which is smaller assign it to the next of newly created linked and increment both the linkedlist
+T.C - (2N)
+S.C - O(N)
 '''
 
 class ListNode(object):

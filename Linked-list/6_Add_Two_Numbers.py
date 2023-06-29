@@ -1,3 +1,5 @@
+# Leetcode - 2
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -25,6 +27,3 @@ class Solution(object):
             temp = temp.next
             
         return dummy.next 
-sum = 390
-for i in sum:
-    print(i)
