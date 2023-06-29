@@ -25,5 +25,6 @@ class Solution(object):
             temp = temp.next
             
         return dummy.next 
-            
-                
+sum = 390
+for i in sum:
+    print(i)
