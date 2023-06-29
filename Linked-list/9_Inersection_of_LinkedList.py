@@ -1,14 +1,12 @@
 # Gfg Intersection of Linked List.
 # Return the linked list which have common values.
 
-''' structure of list node:
 
 class Node:
     def __init__(self,data):
         self.data=data
         self.next=None
 
-'''
 
 class Solution:
     def findIntersection(self, head1, head2):
