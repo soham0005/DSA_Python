@@ -23,4 +23,5 @@ def moveZeroes(nums):
                 j += 1
     print(nums)
     
-moveZeroes([0,1,0,3,12])
+# moveZeroes([0,1,0,3,12])
+print(7 % 10)
