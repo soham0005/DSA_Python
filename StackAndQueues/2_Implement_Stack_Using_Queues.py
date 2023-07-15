@@ -43,3 +43,7 @@ class MyStack(object):
 # param_2 = obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.empty()
+
+
+s = ["h","e","l","l","o"]
+print(s[::-1])
