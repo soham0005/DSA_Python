@@ -15,4 +15,4 @@ def minSwaps(s):
         else:
             count -= 1
         maxCount = max(count,maxCount)
-    return (maxCount + 1) // 2
+    return (maxCount + 1) // 2 
