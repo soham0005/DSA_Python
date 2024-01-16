@@ -41,6 +41,18 @@ class BinaryTree:
             return 0
         return  1 + self.numberOfFullNodes(root.left) + self.numberOfFullNodes(root.right)
     
+    def getLeafNodes(self,root):
+        ans = []
+        
+        def traverse(root):
+            if root is not None:
+                if root.left is None and root.right is None:
+                    ans.append(root.data)
+                traverse(root.left)
+                traverse(root.right)
+        traverse(root)
+        return ans
+                    
     
     
 if __name__ == '__main__':
@@ -56,7 +68,7 @@ if __name__ == '__main__':
     
     
     ans = tree.countNodes(tree.root)
-    leafAns = tree.numberOfFullNodes(tree.root)
+    leafAns = tree.getLeafNodes(tree.root)
     
-    print(ans)
+    print(leafAns)
         

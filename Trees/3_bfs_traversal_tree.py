@@ -3,7 +3,7 @@ from collections import deque
 class Node:
     def __init__(self,data):
         self.data = data
-        self.left = None
+        self.left = None  
         self.right = None
         
 
@@ -59,6 +59,7 @@ class BinaryTree:
             level_size = len(queue)
             curr_level = deque()
             
+             
             for i in range(level_size):
                 curr = queue.popleft()
                 
@@ -99,19 +100,18 @@ class BinaryTree:
                     
             
         return queue.popleft()
-
-
+    
 
 
 if __name__ == '__main__':
     tree = BinaryTree()
     tree.root = Node(1)
     tree.root.left = Node(2)
-    tree.root.right = Node(3)
-    tree.root.left.left = Node(4)
-    tree.root.left.right = Node(5)
-    tree.root.right.left = Node(6)
-    tree.root.right.right = Node(7)
+    tree.root.right = Node(2)
+    tree.root.left.left = Node(3)
+    tree.root.left.right = Node(4)
+    tree.root.right.left = Node(4)
+    tree.root.right.right = Node(3)
     
-    ans = tree.LevelOrderSuccessor(tree.root,3)
-    print(ans.data)
+    ans = tree.Symmetric_Tree(tree.root)
+    print(ans)
