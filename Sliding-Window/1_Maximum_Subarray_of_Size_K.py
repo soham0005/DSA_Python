@@ -1,20 +1,25 @@
-# GFG
-'''
-Approach:
-1) Generate a window Sum
-2) Assign it to max Sum
-3) Run a Loop and add next element to window sum and subtract previous value
-4) Compare with maxSum
 
-'''
+def maximum_sum_subarray(nums,k):
+    
+    if k <= 0  or  k < len(nums):
+        return 0
+    
+    left = right = 0
+    
+    max_sum = float("-inf")
+    curr_sum = 0
+    
+    
+    while right < len(nums):
+        curr_sum += nums[right]
+        
+        
+        if right - left + 1 == k:
+            max_sum = max(max_sum,curr_sum)
+            curr_sum -= nums[left]
+            left+=1
+        right+=1
+        
+    return max_sum
 
-def maximum_Subarray(arr,k):
-    window_sum = sum(arr[:k])
-    maxSum = window_sum
-    n = len(arr)
-    for i in range(n-k):
-        window_sum = window_sum - arr[i] + arr[i+k]
-        maxSum = max(maxSum,window_sum)
-    return maxSum
-
-print(maximum_Subarray([100,200,300,400],3))
+print(maximum_sum_subarray([]))
